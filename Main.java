@@ -13,8 +13,8 @@ class Main {
         Connection conn = null;
         try {
             // INSTANTIATE CONNECTION
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/test?" + 
-                "user=root&password=hunter2");
+            conn = DriverManager.getConnection("jdbc:mysql://falkenbr0.student.rit.edu" + 
+                "/test?user=t_user&password=hunter2");
             // INSTANTIATE AND EXECUTE A STATEMENT
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM mock");
