@@ -1,0 +1,753 @@
+INSERT INTO Characters(name, realm, species, class, guild, level, faction, appearance)
+VALUES('Joe', 'Aerie Peak', 'Draenei', 'Warrior', 'All Stars', 56, 'Alliance', 'big, hairy');
+
+INSERT INTO Characters(name, realm, species, class, guild, level, faction, appearance)
+VALUES('Thomas', 'Blade Fist', 'Dwarf', 'Druid', 'Ballers', 70, 'Alliance', 'skinny, tall');
+
+INSERT INTO Characters(name, realm, species, class, guild, level, faction, appearance)
+VALUES('Jake', 'Arthas', 'Blood Elf', 'Death Knight', 'Data Management', 37, 'Horde', 'short, long-hair');
+
+INSERT INTO Characters(name, realm, species, class, guild, level, faction, appearance)
+VALUES('Tyler', 'Aerie Peak', 'Gnome', 'Monk', 'Relations', 25, 'Alliance', 'round, hairy');
+
+INSERT INTO Characters(name, realm, species, class, level, faction, appearance)
+VALUES('Zach', 'Lune', 'Human', 'Paladin', 60, 'Alliance', 'skinny, hairy');
+
+INSERT INTO Characters(name, realm, species, class, guild, level, faction, appearance)
+VALUES('Matt', 'Lune', 'Orc', 'Priest', 'Algebra', 53, 'Horde', 'big, long-hair');
+
+INSERT INTO Characters(name, realm, species, class, guild, level, faction, appearance)
+VALUES('Alex', 'Arthas', 'Tauren', 'Rogue', 'Ballers', 48, 'Horde', 'skinny, short-hair');
+
+INSERT INTO Characters(name, realm, species, class, guild, level, faction, appearance)
+VALUES('Brandon', 'Aerie Peak', 'Troll', 'Shaman', 'All Stars', 11, 'Horde', 'short, hairy');
+
+INSERT INTO Characters(name, realm, species, class, level, faction, appearance)
+VALUES('Austin', 'Draka', 'Undead', 'Mage', 70, 'Horde', 'big, short-hair');
+
+INSERT INTO Characters(name, realm, species, class, guild, level, faction, appearance)
+VALUES('Mark', 'Draka', 'Night Elf', 'Hunter', 'Relations', 65, 'Alliance', 'skinny, short');
+
+
+INSERT INTO Guilds(name, level, num_members, type)
+VALUE('All Stars',25,150,'PVP');
+
+INSERT INTO Guilds(name, level, num_members, type)
+VALUE('Ballers',4,20,'PVE');
+
+INSERT INTO Guilds(name, level, num_members, type)
+VALUE('Data Management',14,100,'RP');
+
+INSERT INTO Guilds(name, level, num_members, type)
+VALUE('Algebra',10,70,'Raiding');
+
+INSERT INTO Guilds(name, level, num_members, type)
+VALUE('Relations',21,120,'Social');
+
+
+INSERT INTO City(name, continent, zone)
+VALUE('Origimmar','Kalamidor','Durotar');
+
+INSERT INTO City(name, continent, zone)
+VALUE('Stormwind','Eastern Kingdoms','Elwynn Forest');
+
+INSERT INTO City(name, continent, zone)
+VALUE('Darnassus','Kalamidor','Teldrassil');
+
+INSERT INTO City(name, continent, zone)
+VALUE('Exodar','Kalamidor','Azuremyst Isle');
+
+INSERT INTO City(name, continent, zone)
+VALUE('Ironforge','Eastern Kingdoms','Dun Morogh');
+
+INSERT INTO City(name, continent, zone)
+VALUE('Under city','Eastern Kingdoms','Tristfall Glades');
+
+INSERT INTO City(name, continent, zone)
+VALUE('Silvermoon city','Eastern Kingdoms','Eversong Woods');
+
+INSERT INTO City(name, continent, zone)
+VALUE('Thunder Bluff','Kalamidor','Mulgore');
+
+INSERT INTO City(name, continent, zone)
+VALUE('Dalaran','Northrend','Crystalsong Forest');
+
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Draenei','Exodus','+1 Mana','Azuremyst Isle');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Dwarf','Ironforge','+1 Health','Dun Morogh');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Gnome','Irongforge','+1 Attack','Dun Morogh');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Blood Elf','Silvermoon city','+1 Defense','Eversong Woods');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Human','Stormwind','+1 Health','Elwynn Forest');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Orc','Origimmar','+2 Attack','Durotar');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Tauren','Thunder Bluff','+1 Mana','Mulgore');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Troll','Origimmar','+1 Health','Durotar');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Undead','Under city','+1 Attack','Tristfall Glades');
+
+INSERT INTO Species(name, city, stat_increase, starting_location)
+VALUE('Night Elf','Darnassus','+1 Defense','Teldrassil');
+
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Warrior','100, 20, 50, 30','Charge','Axe');
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Druid','50, 90, 10, 10','Transform','Staff');
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Death Knight','90, 10, 60, 30','Raise dead','Two-Handed Sword');
+
+INSERT INTO Classes(name, stats, abilities)
+VALUE('Monk','60, 50, 50, 20','Soul dance');
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Paladin','110, 50, 30, 30','Holy smite','Mace');
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Priest','20, 100, 15, 10','Heal','Staff');
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Rogue','70, 30, 60, 10','Stealth','Dagger');
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Shaman','60, 100, 50, 20','Summon totem','Staff');
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Mage','30, 120, 60, 10','Fireball','Staff');
+
+INSERT INTO Classes(name, stats, abilities, starting_weapon)
+VALUE('Hunter','40, 30, 50, 15','Pet taming','Bow');
+
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Helmet of Strength','Common',20,37,'Silver',221,100,'0, 0, 20, 5','Helmet');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Helmet of Health','Rare',5,50,'Black',350,100,'10, 0, 0, 5','Helmet');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Helmet of Mana','Poor',30,50,'Priest','Black',349,100,'0, 10, 0, 5','Helmet');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Chest of Attack','Epic',1,22,'Yellow',464,100,'0, 0, 0, 10','Chest');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Chest of Defense','Common',22,33,'Red',176,100,'0, 0, 0, 20','Chest');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Sword of Attack','Common',21,50,'Blue',227,100,'0, 0, 20, 0','Sword');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Sword of Defense','Epic',1,60,'Paladin','Silver',257,100,'0, 0, 0, 15','Sword');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Dagger of Attack','Rare',7,25,'Rogue','Black',250,100,'0, 0, 30, 0','Dagger');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Staff of Mana','Common',19,60,'Mage','Green',389,100,'0, 20, 0, 0','Staff');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Leggings of Health','Poor',32,37,'Warrior','Yellow',153,100,'20, 0, 0, 0','Leggings');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Leggings of Mana','Rare',4,51,'Red',22,100,'0, 20, 0, 5','Leggings');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Sword of Health','Epic',1,10,'Shaman','Blue',356,100,'20, 0, 5, 0','Sword');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Shield of Defense','Rare',7,22,'Silver',377,100,'0, 0, 0, 30','Shield');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Leggings of Defense','Common',18,10,'Black',78,100,'0, 0, 0, 25','Leggings');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Boots of Defense','Poor',30,1,'Death Knight','Green',209,100,'0, 0, 0, 25','Boots');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Chest of Health','Poor',35,20,'Yellow',39,100,'20, 0, 0, 10','Chest');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Mace of Attack','Common',23,17,'Paladin','Red',116,100,'5, 0, 20, 0','Mace');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Mace of Health','Rare',5,53,'Green',350,100,'20, 0, 5, 0','Mace');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, appearance, market_price, durability, stats, type)
+VALUE('Axe of Attack','Poor',36,2,'Yellow',32,100,'20, 0, 5, 0','Axe');
+
+INSERT INTO Equipment(name, rarity, drop_percentage, required_level, required_class, appearance, market_price, durability, stats, type)
+VALUE('Boots of Health','Poor',31,6,'Hunter','Blue',297,100,'10, 0, 0, 5','Boots');
+
+
+INSERT INTO Quests(id, title, required_level, required_class)
+VALUE(1, 'The Way of the Warrior Part 1', 1, 'Warrior');
+
+INSERT INTO Quests(id, title, required_level, required_class)
+VALUE(2, 'The Way of the Warrior Part 2', 10, 'Warrior');
+
+INSERT INTO Quests(id, title, required_level, required_class)
+VALUE(3, 'The Way of the Warrior Part 3', 30, 'Warrior');
+
+INSERT INTO Quests(id, title, required_level, faction)
+VALUE(4, 'Alliance Battle Part 1', 10, 'Alliance');
+
+INSERT INTO Quests(id, title, required_level, faction)
+VALUE(5, 'Alliance Battle Part 2', 30, 'Alliance');
+
+INSERT INTO Quests(id, title, required_level, faction)
+VALUE(6, 'Alliance Battle Part 3', 50, 'Alliance');
+
+INSERT INTO Quests(id, title, required_level, faction)
+VALUE(7, 'Horde Battle Part 1', 10, 'Horde');
+
+INSERT INTO Quests(id, title, required_level, faction)
+VALUE(8, 'Horde Battle Part 2', 30, 'Horde');
+
+INSERT INTO Quests(id, title, required_level)
+VALUE(9, 'Wonderer', 30);
+
+INSERT INTO Quests(id, title, required_level)
+VALUE(10, 'Discoverer', 70);
+
+INSERT INTO Quests(id, title, required_level, required_class)
+VALUE(11, 'The Way of the Mage Part 1', 1, 'Mage');
+
+INSERT INTO Quests(id, title, required_level, required_class)
+VALUE(12, 'The Way of the Mage Part 2', 20, 'Mage');
+
+INSERT INTO Quests(id, title, required_level, required_class, faction)
+VALUE(13, 'Horde Shaman Battle Part 1', 10,'Shaman','Horde');
+
+INSERT INTO Quests(id, title, required_level, required_class, faction)
+VALUE(14, 'Horde Shaman Battle Part 2', 30,'Shaman','Horde');
+
+INSERT INTO Quests(id, title, required_level)
+VALUE(15, 'Becoming the Master', 70);
+
+INSERT INTO Quests(id, title, required_level)
+VALUE(16, 'Practice Makes Perfect', 50);
+
+INSERT INTO Quests(id, title, required_level, required_class)
+VALUE(17, 'The Way of the Hunter Part 1', 1, 'Hunter');
+
+INSERT INTO Quests(id, title, required_level, required_class)
+VALUE(18, 'The Way of the Hunter Part 2', 10, 'Hunter');
+
+INSERT INTO Quests(id, title, required_level, faction)
+VALUE(19, 'Attack on the Alliance', 50, 'Horde');
+
+INSERT INTO Quests(id, title, required_level, faction)
+VALUE(20, 'Attack on the Horde', 50, 'Alliance');
+
+
+INSERT INTO Talents(name, type, new_spells)
+VALUE('Juggernaut','DPS','Melee');
+
+INSERT INTO Talents(name, type, new_spells, new_modifications)
+VALUE('Furious Strikes','DPS','Melee', '+3 Attack');
+
+INSERT INTO Talents(name, type, new_spells, new_modifications)
+VALUE('Avatar','Tank','Block', '+10 Defense');
+
+INSERT INTO Talents(name, type, new_spells, new_modifications)
+VALUE('Counter Strike','DPS','Melee', 'None');
+
+INSERT INTO Talents(name, type, new_spells, new_modifications)
+VALUE('Frost Bomb','DPS','Cast', '+5 Mana');
+
+INSERT INTO Talents(name, type, new_spells, new_modifications)
+VALUE('Ice Ward','DPS','Instant Cast','None');
+
+INSERT INTO Talents(name, type, new_spells, new_modifications)
+VALUE('Deadly Throw','DPS','Instant Cast', '+5 Attack');
+
+INSERT INTO Talents(name, type, new_spells, new_modifications)
+VALUE('Vigilance','Tank','Instant Cast', '+20 Defense');
+
+INSERT INTO Talents(name, type, new_spells)
+VALUE('Body and Soul','Heal','Cast');
+
+INSERT INTO Talents(name, type, new_spells, new_modifications)
+VALUE('Divine Start','Heal','Instant Cast', '+5 Health');
+
+
+INSERT INTO Mounts(id, city, species, appearance, name, speed, type, market_price, riding_proficiency)
+VALUE(21, 'Stormwind', 'Horse', 'Brown','Chestnut Mare', 30, 'Ground', 200, 'Apprentice');
+
+INSERT INTO Mounts(id, city, species, appearance, name, speed, type, market_price, riding_proficiency)
+VALUE(22, 'Ironforge', 'Ram', 'Grey','Swift Grey Ram', 60, 'Ground', 500, 'Expert');
+
+INSERT INTO Mounts(id, city, species, appearance, name, speed, type, market_price, riding_proficiency)
+VALUE(23, 'Origimmar', 'Wolf', 'Brown', 'Dire Wolf', 30, 'Ground', 200, 'Apprentice');
+
+INSERT INTO Mounts(id, city, species, appearance, name, speed, type, market_price, riding_proficiency)
+VALUE(24, 'Under city', 'Horse', 'White','Skeletal Horse', 30, 'Ground', 200, 'Apprentice');
+
+INSERT INTO Mounts(id, city, species, appearance, name, speed, type, market_price, riding_proficiency)
+VALUE(1, 'Dalaran', 'Dragon', 'Red','Twilight Drake', 200, 'Flying', 1000, 'Master');
+
+
+INSERT INTO Realms(name, ip_address, type, server_location)
+VALUE('Aerie Peak','216.27.61.137','PVE','Pacific');
+
+INSERT INTO Realms(name, ip_address, type, server_location)
+VALUE('Blade Fist','452.75.23.576','PVP','Pacific');
+
+INSERT INTO Realms(name, ip_address, type, server_location)
+VALUE('Lune','RP','932.47.36.154','Central');
+
+INSERT INTO Realms(name, ip_address, type, server_location)
+VALUE('Draka','356.73.56.781', 'PVE', 'Atlantic');
+
+INSERT INTO Realms(name, ip_address, type, server_location)
+VALUE('Arthas','PVP','568.24.62.511','Atlantic');
+
+
+INSERT INTO Equips(player, equipment)
+VALUE('Joe','Helmet of Strength');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Joe','Chest of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Joe','Sword of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Thomas','Helmet of Health');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Thomas','Chest of Health');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Thomas','Sword of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Jake','Boots of Defense');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Jake','Helmet of Strength');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Jake','Axe of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Tyler','Chest of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Tyler','Shield of Defense');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Zach','Sword of Defense');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Zach','Shield of Defense');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Zach','Mace of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Matt','Helmet of Mana');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Matt','Shield of Defense');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Matt','Leggings of Defense');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Alex','Dagger of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Alex','Chest of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Alex','Helmet of Strength');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Brandon','Sword of Health');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Brandon','Leggings of Defense');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Brandon','Axe of Attack');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Austin','Staff of Mana');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Austin','Leggings of Mana');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Austin','Chest of Defense');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Mark','Boots of Health');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Mark','Helmet of Health');
+
+INSERT INTO Equips(player, equipment)
+VALUE('Mark','Leggings of Mana');
+
+
+INSERT INTO Owns(player, mount)
+VALUE('Joe', 21);
+
+INSERT INTO Owns(player, mount)
+VALUE('Joe', 23);
+
+INSERT INTO Owns(player, mount)
+VALUE('Thomas', 22);
+
+INSERT INTO Owns(player, mount)
+VALUE('Thomas', 25);
+
+INSERT INTO Owns(player, mount)
+VALUE('Thomas', 22);
+
+INSERT INTO Owns(player, mount)
+VALUE('Jake', 24);
+
+INSERT INTO Owns(player, mount)
+VALUE('Jake', 21);
+
+INSERT INTO Owns(player, mount)
+VALUE('Tyler', 21);
+
+INSERT INTO Owns(player, mount)
+VALUE('Tyler', 23);
+
+INSERT INTO Owns(player, mount)
+VALUE('Zach', 22);
+
+INSERT INTO Owns(player, mount)
+VALUE('Zach', 24);
+
+INSERT INTO Owns(player, mount)
+VALUE('Matt', 22);
+
+INSERT INTO Owns(player, mount)
+VALUE('Matt', 21);
+
+INSERT INTO Owns(player, mount)
+VALUE('Alex', 22);
+
+INSERT INTO Owns(player, mount)
+VALUE('Alex', 24);
+
+INSERT INTO Owns(player, mount)
+VALUE('Austin', 25);
+
+INSERT INTO Owns(player, mount)
+VALUE('Austin', 22);
+
+INSERT INTO Owns(player, mount)
+VALUE('Austin', 21);
+
+INSERT INTO Owns(player, mount)
+VALUE('Mark', 22);
+
+INSERT INTO Owns(player, mount)
+VALUE('Mark', 23);
+
+
+INSERT INTO Given(city, quest)
+VALUE('Origimmar', 7);
+
+INSERT INTO Given(city, quest)
+VALUE('Origimmar', 8);
+
+INSERT INTO Given(city, quest)
+VALUE('Silvermoon city', 13);
+
+INSERT INTO Given(city, quest)
+VALUE('Silvermoon city', 1);
+
+INSERT INTO Given(city, quest)
+VALUE('Under city', 14);
+
+INSERT INTO Given(city, quest)
+VALUE('Under city', 3);
+
+INSERT INTO Given(city, quest)
+VALUE('Thunder Bluff', 9);
+
+INSERT INTO Given(city, quest)
+VALUE('Thunder Bluff', 11);
+
+INSERT INTO Given(city, quest)
+VALUE('Stormwind', 4);
+
+INSERT INTO Given(city, quest)
+VALUE('Stormwind', 5);
+
+INSERT INTO Given(city, quest)
+VALUE('Ironforge', 6);
+
+INSERT INTO Given(city, quest)
+VALUE('Ironforge', 16);
+
+INSERT INTO Given(city, quest)
+VALUE('Exodar', 18);
+
+INSERT INTO Given(city, quest)
+VALUE('Exodar', 12);
+
+INSERT INTO Given(city, quest)
+VALUE('Darnassus', 17);
+
+INSERT INTO Given(city, quest)
+VALUE('Darnassus', 2);
+
+INSERT INTO Given(city, quest)
+VALUE('Dalaran', 19);
+
+INSERT INTO Given(city, quest)
+VALUE('Dalaran', 20);
+
+INSERT INTO Given(city, quest)
+VALUE('Dalaran', 15);
+
+INSERT INTO Given(city, quest)
+VALUE('Dalaran', 10);
+
+
+INSERT INTO Tracks(player, quest)
+VALUE('Joe', 1);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Joe', 2);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Joe', 3);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Joe', 4);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Joe', 5);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Joe', 6);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Thomas', 15);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Thomas', 20);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Thomas', 4);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Thomas', 5);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Thomas', 10);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Thomas', 9);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Thomas', 16);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Jake', 7);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Tyler', 4);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Zach', 19);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Zach', 4);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Zach', 5);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Zach', 6);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Zach', 16);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Matt', 7);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Matt', 19);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Matt', 8);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Matt', 9);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Alex', 7);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Alex', 8);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Alex', 9);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Brandon', 7);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Brandon', 13);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Austin', 11);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Austin', 12);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Austin', 15);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Austin', 20);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Austin', 16);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Mark', 17);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Mark', 18);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Mark', 20);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Mark', 9);
+
+INSERT INTO Tracks(player, quest)
+VALUE('Mark', 16);
+
+
+INSERT INTO Attains(class, talent)
+VALUE('Warrior', 'Juggernaut');
+
+INSERT INTO Attains(class, talent)
+VALUE('Warrior', 'Vigilance');
+
+INSERT INTO Attains(class, talent)
+VALUE('Warrior', 'Counter Strike');
+
+INSERT INTO Attains(class, talent)
+VALUE('Druid', 'Avatar');
+
+INSERT INTO Attains(class, talent)
+VALUE('Druid', 'Juggernaut');
+
+INSERT INTO Attains(class, talent)
+VALUE('Druid', 'Body and Soul');
+
+INSERT INTO Attains(class, talent)
+VALUE('Death Knight', 'Counter Strike');
+
+INSERT INTO Attains(class, talent)
+VALUE('Death Knight', 'Furious Strikes');
+
+INSERT INTO Attains(class, talent)
+VALUE('Monk', 'Furious Strikes');
+
+INSERT INTO Attains(class, talent)
+VALUE('Monk', 'Counter Strike');
+
+INSERT INTO Attains(class, talent)
+VALUE('Paladin', 'Body and Soul');
+
+INSERT INTO Attains(class, talent)
+VALUE('Paladin', 'Juggernaut');
+
+INSERT INTO Attains(class, talent)
+VALUE('Priest', 'Body and Soul');
+
+INSERT INTO Attains(class, talent)
+VALUE('Priest', 'Divine Stand');
+
+INSERT INTO Attains(class, talent)
+VALUE('Rogue', 'Furious Strikes');
+
+INSERT INTO Attains(class, talent)
+VALUE('Rogue', 'Deadly Throw');
+
+INSERT INTO Attains(class, talent)
+VALUE('Shaman', 'Frost Bomb');
+
+INSERT INTO Attains(class, talent)
+VALUE('Shaman', 'Avatar');
+
+INSERT INTO Attains(class, talent)
+VALUE('Shaman', 'Juggernaut');
+
+INSERT INTO Attains(class, talent)
+VALUE('Mage', 'Frost Bomb');
+
+INSERT INTO Attains(class, talent)
+VALUE('Mage', 'Ice Ward');
+
+INSERT INTO Attains(class, talent)
+VALUE('Hunter', 'Deadly Throw');
+
+
+INSERT INTO PreReq(current, previous)
+VALUE(2,1);
+
+INSERT INTO PreReq(current, previous)
+VALUE(3,2);
+
+INSERT INTO PreReq(current, previous)
+VALUE(5,4);
+
+INSERT INTO PreReq(current, previous)
+VALUE(6,5);
+
+INSERT INTO PreReq(current, previous)
+VALUE(8,7);
+
+INSERT INTO PreReq(current, previous)
+VALUE(12,11);
+
+INSERT INTO PreReq(current, previous)
+VALUE(14,13);
+
+INSERT INTO PreReq(current, previous)
+VALUE(18,17);
+
+
+INSERT INTO Unlocks(current, next)
+VALUE('Avatar','Juggernaut');
+
+INSERT INTO Unlocks(current, next)
+VALUE('Ice Ward','Frost Bomb');
+
+INSERT INTO Unlocks(current, next)
+VALUE('Vigilance','Counter Strike');
+
+INSERT INTO Unlocks(current, next)
+VALUE('Divine Stand','Body and Soul');

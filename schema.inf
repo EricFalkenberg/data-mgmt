@@ -1,0 +1,129 @@
+CREATE TABLE Mounts (
+    id              INTEGER(11)     NOT NULL    AUTO_INCREMENT,
+    city                VARCHAR(60)     NOT NULL,
+    species             VARCHAR(60)     NOT NULL,
+    appearance      VARCHAR(60)     NOT NULL,
+    name            VARCHAR(60)     NOT NULL,
+    speed           INTEGER(11)     NOT NULL,
+    type                VARCHAR(60)     NOT NULL,
+    market_price        INTEGER(11)     NOT NULL,
+    riding_proficiency  VARCHAR(80)     NOT NULL,
+    PRIMARY KEY(id)
+) ;
+
+CREATE TABLE City (
+    name            VARCHAR(60) NOT NULL,
+    continent           VARCHAR(60) NOT NULL,
+    zone                VARCHAR(60) NOT NULL,
+    PRIMARY KEY(name)
+) ;
+
+CREATE TABLE Species (
+    name            VARCHAR(60) NOT NULL,
+    city                VARCHAR(60) NOT NULL,
+    stat_increase       VARCHAR(60) NOT NULL,
+    starting_location   VARCHAR(60) NOT NULL, 
+    PRIMARY KEY(name)
+) ;
+
+CREATE TABLE Quests (
+    id              INTEGER(11)     NOT NULL    AUTO_INCREMENT,
+    title               VARCHAR(60) NOT NULL,
+    required_level      INTEGER(11)     NOT NULL,
+    required_class      VARCHAR(60), 
+    faction         VARCHAR(60),
+    PRIMARY KEY(id)
+) ;
+
+CREATE TABLE Guilds (
+    name            VARCHAR(60) NOT NULL,
+    level               INTEGER(11)     NOT NULL,
+    num_members     INTEGER(11)     NOT NULL,
+    type                VARCHAR(60) NOT NULL,
+    PRIMARY KEY(name)
+) ;
+
+CREATE TABLE Realms (
+    name            VARCHAR(60) NOT NULL,
+    ip_address      VARCHAR(15) NOT NULL,
+    type                VARCHAR(60) NOT NULL,
+    server_location     VARCHAR(60) NOT NULL,
+    PRIMARY KEY(name)
+) ;
+
+CREATE TABLE Talents (
+    name            VARCHAR(60) NOT NULL,
+    type                VARCHAR(60) NOT NULL,
+    new_spells      VARCHAR(120) NOT NULL,
+    new_modifications   VARCHAR(120),
+    PRIMARY KEY(name)
+) ;
+
+CREATE TABLE Classes (
+    name            VARCHAR(60) NOT NULL,
+    stats               VARCHAR(60) NOT NULL,
+    abilities           VARCHAR(60) NOT NULL,
+    starting_weapon VARCHAR(60),
+    PRIMARY KEY(name)
+) ;
+
+CREATE TABLE Characters (
+    name            VARCHAR(60) NOT NULL,
+    realm           VARCHAR(60) NOT NULL,
+    species         VARCHAR(60) NOT NULL,
+    class               VARCHAR(60) NOT NULL,
+    guild               VARCHAR(60),
+    level               INTEGER(11)     NOT NULL,
+    faction         VARCHAR(60) NOT NULL,
+    appearance      VARCHAR(60) NOT NULL,
+    PRIMARY KEY(name)
+) ;
+
+CREATE TABLE Equipment (
+    name            VARCHAR(60) NOT NULL,
+    rarity              VARCHAR(60) NOT NULL,
+    drop_percentage INTEGER(11)     NOT NULL,
+    required_level      INTEGER(11)     NOT NULL,
+    required_class      VARCHAR(60),
+    appearance      VARCHAR(60) NOT NULL,
+    market_price        INTEGER(11)     NOT NULL,
+    durability          INTEGER(11)     NOT NULL,
+    stats               VARCHAR(60) NOT NULL,
+    type                VARCHAR(60) NOT NULL,
+    PRIMARY KEY(name)
+) ;
+
+CREATE TABLE PreReq (
+    current         INTEGER(11)     NOT NULL,
+    previous            INTEGER(11)     NOT NULL
+) ;
+
+CREATE TABLE Given (
+    city                VARCHAR(60) NOT NULL,
+    quest           INTEGER(11)     NOT NULL
+) ;
+
+CREATE TABLE Owns (
+    player          VARCHAR(60) NOT NULL,
+    mount           INTEGER(11)     NOT NULL
+) ;
+
+CREATE TABLE tracks(
+    player          VARCHAR(60) NOT NULL,
+    quest           INTEGER(11)     NOT NULL
+) ;
+
+CREATE TABLE Attains (
+    class               VARCHAR(60) NOT NULL,
+    talent          VARCHAR(60) NOT NULL
+) ;
+
+CREATE TABLE Equips (
+    player          VARCHAR(60) NOT NULL,
+    equipment       VARCHAR(60) NOT NULL
+) ;
+
+CREATE TABLE Unlocks (
+    current         VARCHAR(60) NOT NULL,
+    next            VARCHAR(60) NOT NULL
+) ;

@@ -1,5 +1,5 @@
 all:
-	javac Main.java
+	javac DataMgmt.java
 
 clean:
 	rm *.class
