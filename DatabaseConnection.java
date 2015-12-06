@@ -1,5 +1,6 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
@@ -63,13 +64,13 @@ class DatabaseConnection {
     }
 
     private void command(String sql) throws SQLException {
-        Statement s = conn.createStatement();
-        s.executeUpdate(sql);
+        PreparedStatement s = conn.prepareStatement(sql);
+        s.executeUpdate();
     }
     
     private ResultSet query(String sql)   throws SQLException {
-        Statement s = conn.createStatement();
-        return s.executeQuery(sql);
+        PreparedStatement s = conn.prepareStatement(sql);
+        return s.executeQuery();
     }
 
     public void populate_relations() {
