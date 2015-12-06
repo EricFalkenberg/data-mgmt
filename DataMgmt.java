@@ -39,8 +39,13 @@ class DataMgmt {
         System.out.println("| ID | Name |");
         db.trackable();
         System.out.println("----------------------------------------------------------------------------------");
-        System.out.println("Query 6: Returns the highest leveled character in the guild 'All Stars'"); 
+        System.out.println("Query 6: Returns the highest leveled character in the guild 'Relations'"); 
         System.out.println("| Name |");
         db.get_best_char_in_guild();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Query 7: Returns characters level 45 and higher that are only a part of raiding   ");
+        System.out.println("         guilds of a level lower than 20");
+        System.out.println("| Name |");
+        db.get_high_level_low_raiding_guild_players();
     }   
 }

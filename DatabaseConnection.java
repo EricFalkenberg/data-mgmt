@@ -133,8 +133,16 @@ class DatabaseConnection {
 
     public void get_best_char_in_guild() {
         String sql = "SELECT t.name FROM Characters as t " +
-                     "WHERE (t.level > ALL( SELECT c.level FROM Characters AS c WHERE c.guild='All Stars' AND c.name<>t.name) " +
-                     "AND t.guild='All Stars')";
+                     "WHERE (t.level > ALL( SELECT c.level FROM Characters AS c WHERE c.guild='Relations' " +
+                     "AND c.name<>t.name) AND t.guild='Relations')";
+        this.run(sql, "query");
+    }
+
+    public void get_high_level_low_raiding_guild_players() {
+        String sql = "SELECT name FROM Characters WHERE level >= 45 " +
+                     "AND name NOT IN " +
+                     "(SELECT c.name AS name FROM (Characters AS c JOIN Guilds AS g " +
+                     "ON c.guild=g.name) WHERE g.type<>'raiding' AND g.level<20)";
         this.run(sql, "query");
     }
 
