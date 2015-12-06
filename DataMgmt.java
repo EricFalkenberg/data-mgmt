@@ -35,6 +35,12 @@ class DataMgmt {
         System.out.println("| Equipment |");
         db.equippable();
         System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Query 5: All quests that are trackable by player character 'Joe'");
+        System.out.println("| ID | Name |");
         db.trackable();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Query 6: Returns the highest leveled character in the guild 'All Stars'"); 
+        System.out.println("| Name |");
+        db.get_best_char_in_guild();
     }   
 }

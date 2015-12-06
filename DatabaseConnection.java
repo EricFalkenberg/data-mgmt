@@ -131,6 +131,13 @@ class DatabaseConnection {
         this.run("DROP TABLE Unlocks"    , "command");
     }
 
+    public void get_best_char_in_guild() {
+        String sql = "SELECT t.name FROM Characters as t " +
+                     "WHERE (t.level > ALL( SELECT c.level FROM Characters AS c WHERE c.guild='All Stars' AND c.name<>t.name) " +
+                     "AND t.guild='All Stars')";
+        this.run(sql, "query");
+    }
+
     public void get_overall_appearance() {
         String sql = "(SELECT appearance FROM Characters WHERE name='Alex') " + 
                      "UNION " + 
