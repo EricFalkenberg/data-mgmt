@@ -93,6 +93,14 @@ class DatabaseConnection {
         }
     }
 
+    public void add_indexes() {
+        String sql;
+        sql = "ALTER TABLE Characters ADD INDEX name(name)";
+        this.run(sql, "command");
+        sql = "ALTER TABLE Guilds ADD INDEX type(type)";
+        this.run(sql, "command");
+    }
+
     public void delete_from_relations() {
         System.out.println("Wiping relations....");
         this.run("DELETE FROM Mounts"    , "command");

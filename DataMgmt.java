@@ -10,12 +10,44 @@ class DataMgmt {
         DatabaseConnection db = new DatabaseConnection("jdbc:mysql://localhost" + 
                                            "/test?user=t_user&password=hunter2");
         if (args.length > 0) {
-            if (args[0] == "populate") {
+            if (args[0].equals("populate")) {
                 db.delete_from_relations();
                 db.populate_relations();
             }
+            else if (args[0].equals("profile_indexing")) {
+                long startTime;
+                long endTime;
+                System.out.println("Profiling Queries 7 and 8 without indexes...");
+                System.out.println("----------------------------------------------------------------------------------");
+                startTime = System.nanoTime();
+                db.get_high_level_low_raiding_guild_players();
+                endTime = System.nanoTime();
+                System.out.println("QUERY 7 DURATION: " + (endTime-startTime)/1000000 + " milliseconds");
+                System.out.println("----------------------------------------------------------------------------------");
+                startTime = System.nanoTime();
+                db.no_guild_aerie_peak();
+                endTime = System.nanoTime();
+                System.out.println("QUERY 8 DURATION: " + (endTime-startTime)/1000000 + " milliseconds");
+                System.out.println("----------------------------------------------------------------------------------");
+                System.out.println("Adding indexes to model...");
+                db.add_indexes();
+                System.out.println("Profiling Queries 7 and 8 with indexes...");
+                System.out.println("----------------------------------------------------------------------------------");
+                startTime = System.nanoTime();
+                db.get_high_level_low_raiding_guild_players();
+                endTime = System.nanoTime();
+                System.out.println("QUERY 7 DURATION: " + (endTime-startTime)/1000000 + " milliseconds");
+                System.out.println("----------------------------------------------------------------------------------");
+                startTime = System.nanoTime();
+                db.no_guild_aerie_peak();
+                endTime = System.nanoTime();
+                System.out.println("QUERY 8 DURATION: " + (endTime-startTime)/1000000 + " milliseconds");
+                System.out.println("----------------------------------------------------------------------------------");
+                return;
+            }
             else {
-                System.out.println("usage: java DataMgmt [populate]");
+                System.out.println("usage: java DataMgmt [populate] [profile_indexing]");
+                return;
             }
         }
         System.out.println("----------------------------------------------------------------------------------");

@@ -1,0 +1,23 @@
+Harry:
+	-Queries/Relational Algebra
+	-Normalization
+	-write ups
+	-Data Modeling
+	-Presentation
+	-Relational Drawbacks
+	
+Dave:
+	-Test data
+	-Queries/Relational Algebra
+	-Normalization
+	-Data Modeling
+	-write ups
+	-Relational Drawbacks
+
+Eric:
+	-Created Initial database
+	-Queries/Relational Algebra
+	-Data Modeling
+	-Tested the performance improvements of indexing
+	-Write ups
+	-Relational Drawbacks
