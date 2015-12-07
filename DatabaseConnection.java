@@ -146,6 +146,33 @@ class DatabaseConnection {
         this.run(sql, "query");
     }
 
+    public void warrior_ability_grants() {
+        String sql = "SELECT t.name " +
+                     "FROM ((Classes AS c) JOIN Attains ON name=class) JOIN (Talents AS t) ON talent=t.name " +
+                     "WHERE c.name='Warrior' AND new_spells IS NOT NULL";
+        this.run(sql, "query");
+    }
+
+    public void no_guild_aerie_peak() {
+        String sql = "SELECT name FROM Characters WHERE realm = 'Aerie Peak' " + 
+                        "AND EXISTS (" +
+                            "SELECT name " +
+                            "FROM Characters " +
+                            "WHERE guild IS NULL AND name NOT IN (" +
+                            "SELECT name " +
+                            "FROM Characters " +
+                            "WHERE level < 50 ))";
+        this.run(sql, "query");
+    }
+
+    public void below_required_level() {
+        String sql = "SELECT name, level " +
+                     "FROM (((Characters AS c) JOIN Tracks ON name=player) JOIN (Quests AS q) ON id=quest) " +
+                     "WHERE c.level < q.required_level " +
+                     "GROUP BY q.title";
+        this.run(sql, "query");
+    }
+
     public void get_overall_appearance() {
         String sql = "(SELECT appearance FROM Characters WHERE name='Alex') " + 
                      "UNION " + 

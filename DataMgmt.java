@@ -47,5 +47,19 @@ class DataMgmt {
         System.out.println("         guilds of a level lower than 20");
         System.out.println("| Name |");
         db.get_high_level_low_raiding_guild_players();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Query 8: Query to return all the characters in the realm 'Aerie Peak' who are not"); 
+        System.out.println("         in a guild and whose level is above 50");
+        System.out.println("| Name |");
+        db.no_guild_aerie_peak();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Query 9: List the names and the levels of all characters who completed a quest ");
+        System.out.println("         below the required level. (Expected: No Entries Returned)");
+        System.out.println("No Entries Returned");
+        db.below_required_level();
+        System.out.println("----------------------------------------------------------------------------------");
+        System.out.println("Query 10: List of all warrior talents that grant abilities");
+        System.out.println("| Name |");
+        db.warrior_ability_grants();
     }   
 }
